@@ -1,3 +1,5 @@
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class big {
@@ -34,6 +36,12 @@ public class big {
         else {
             return y;
         }
+    }
+
+    @Test
+    public void testBig(){
+        assertEquals(7, bigIntCheck(7, 2));
+
     }
 
     
