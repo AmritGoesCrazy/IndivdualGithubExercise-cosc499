@@ -9,7 +9,11 @@ public class big {
 
         System.out.println("The bigger of "+ aInt+ " and "+ bInt +" is " + cInt);
 
+        String aString = "super";
+        String bString = "bicycle";
+        String cString = bigStringCheck(aString, bString);
 
+        System.out.println("The bigger of "+ aString+ " and "+ bString +" is " + cString);
 
     }
 
@@ -18,6 +22,16 @@ public class big {
             return x;
         }
         else{
+            return y;
+        }
+    }
+
+    public static String bigStringCheck(String x, String y){
+
+        if (x.length()> y.length()){
+            return x;
+        }
+        else {
             return y;
         }
     }
