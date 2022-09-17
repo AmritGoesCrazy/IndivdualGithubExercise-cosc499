@@ -4,6 +4,7 @@ import org.junit.Test;
 
 public class big {
 
+    // this is the main
     public static void main (String [] args){
         int aInt = 5;
         int bInt = -40;
@@ -18,7 +19,7 @@ public class big {
         System.out.println("The bigger of "+ aString+ " and "+ bString +" is " + cString);
 
     }
-
+    //checks which int is bigger method
     public static int bigIntCheck(int x, int y){
         if(x > y) {
             return x;
@@ -27,7 +28,7 @@ public class big {
             return y;
         }
     }
-
+    //checks which sting is bigger method
     public static String bigStringCheck(String x, String y){
 
         if (x.length()> y.length()){
@@ -41,6 +42,7 @@ public class big {
     @Test
     public void testBig(){
         assertEquals(7, bigIntCheck(7, 2));
+        assertEquals("dumpling", bigStringCheck("car", "dumpling"));
 
     }
 
